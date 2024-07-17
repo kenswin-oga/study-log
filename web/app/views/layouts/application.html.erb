@@ -8,6 +8,20 @@
 
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <script>
+      function checkAssetLoading() {
+        console.log("Checking asset loading...");
+        const scripts = document.getElementsByTagName('script');
+        const styles = document.getElementsByTagName('link');
+        for (let script of scripts) {
+          console.log("Script src:", script.src);
+        }
+        for (let style of styles) {
+          console.log("Stylesheet href:", style.href);
+        }
+      }
+      window.addEventListener('load', checkAssetLoading);
+    </script>
   </head>
 
   <body>

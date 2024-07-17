@@ -67,4 +67,7 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
   config.assets.debug = true
   config.assets.compile = true
+  
+  # 以下の行を追加
+  config.assets.check_precompiled_asset = false
 end
