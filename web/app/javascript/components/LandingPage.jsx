@@ -1,6 +1,10 @@
 import React from 'react';
 
 const LandingPage = () => {
+  const handleSignup = () => {
+    window.location.href = '/signup';
+  };
+
   return (
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
@@ -18,7 +22,10 @@ const LandingPage = () => {
                 <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded">
                   ログイン
                 </button>
-                <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded">
+                <button 
+                  className="px-4 py-2 bg-gray-200 text-gray-800 rounded"
+                  onClick={handleSignup}
+                >
                   新規登録
                 </button>
               </div>
