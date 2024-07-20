@@ -70,4 +70,5 @@ Rails.application.configure do
   
   # 以下の行を追加
   config.assets.check_precompiled_asset = false
+  config.log_level = :debug
 end
