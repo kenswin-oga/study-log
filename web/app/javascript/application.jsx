@@ -1,10 +1,9 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import "../assets/stylesheets/application.tailwind.css";
 
 function App() {
-  return (
-    <h1>Hello React!</h1>
-  )
+  return null;
 }
 
 const root = document.getElementById('root');

@@ -2,23 +2,23 @@ import React from 'react';
 
 const LandingPage = () => {
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#f3f4f6', padding: '1.5rem 0', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-      <div style={{ position: 'relative', padding: '1.5rem 0', maxWidth: '36rem', margin: '0 auto' }}>
-        <div style={{ position: 'relative', padding: '2.5rem 1rem', backgroundColor: 'white', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)', borderRadius: '0.5rem' }}>
-          <div style={{ maxWidth: '28rem', margin: '0 auto' }}>
-            <h1 style={{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '1.5rem' }}>勉強時間記録アプリ</h1>
-            <div>
-              <p style={{ color: '#4b5563', marginBottom: '1.5rem' }}>効率的に勉強時間を管理し、目標達成をサポートします。</p>
-              <ul style={{ listStyleType: 'disc', paddingLeft: '1.25rem', color: '#4b5563', marginBottom: '1.5rem' }}>
-                <li style={{ marginBottom: '0.5rem' }}>簡単な時間記録</li>
-                <li style={{ marginBottom: '0.5rem' }}>詳細な統計とグラフ</li>
-                <li style={{ marginBottom: '0.5rem' }}>カスタマイズ可能な設定</li>
+    <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+      <div className="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div className="relative px-4 py-10 bg-white shadow-md sm:rounded-lg sm:p-20">
+          <div className="max-w-md mx-auto">
+            <h1 className="text-2xl font-semibold mb-6">勉強時間記録アプリ</h1>
+            <div className="space-y-6">
+              <p className="text-gray-700">効率的に勉強時間を管理し、目標達成をサポートします。</p>
+              <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                <li>簡単な時間記録</li>
+                <li>詳細な統計とグラフ</li>
+                <li>カスタマイズ可能な設定</li>
               </ul>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <button style={{ padding: '0.5rem 1rem', backgroundColor: '#e5e7eb', color: '#1f2937', borderRadius: '0.25rem', cursor: 'pointer' }}>
+              <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+                <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded">
                   ログイン
                 </button>
-                <button style={{ padding: '0.5rem 1rem', backgroundColor: '#e5e7eb', color: '#1f2937', borderRadius: '0.25rem', cursor: 'pointer' }}>
+                <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded">
                   新規登録
                 </button>
               </div>
