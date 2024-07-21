@@ -1,0 +1,4 @@
+<div id="home-page-root"
+     data-user="<%= @user.to_json(only: [:id, :name, :email]) %>">
+</div>
+<%= javascript_include_tag "home_page", defer: true %>

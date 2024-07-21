@@ -1,23 +1,21 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
     # API用のルート
     namespace :api do
       post '/signup', to: 'users#create'
+      post '/login', to: 'sessions#create'
+      delete '/logout',  to: 'sessions#destroy'
     end
   
     # ランディングページ（未ログインユーザー向け）
     root 'pages#landing'
 
-#   # ユーザー認証関連
-#   get '/login', to: 'sessions#new'
-#   post '/login', to: 'sessions#create'
-#   delete '/logout', to: 'sessions#destroy'
+    # ユーザー認証関連
+    get    '/login',   to: 'sessions#new'
     get '/signup', to: 'users#new'
 
-#   # アプリケーション本体（ログインユーザー専用）
-#   authenticate :user do
-#     # ホーム画面 / マイページ
-#     get '/home', to: 'pages#home'
-#     get '/dashboard', to: 'pages#dashboard'
+    # アプリケーション本体
+    get '/home', to: 'pages#home'
     
 #     # クイックスタート（タイマー）
 #     resources :timers, only: [:create, :update]
