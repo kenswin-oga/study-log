@@ -74,7 +74,6 @@ const HomePage = ({ user }) => {
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-2">マイページ</h1>
       <h2 className="text-xl font-semibold mb-6 text-gray-600">{user.name}さん、こんにちは！</h2>
-      <p className="text-gray-600 mb-6">メールアドレス: {user.email}</p>
       
       <div className="bg-white shadow-md rounded-lg p-6 mb-6">
         <h2 className="text-2xl font-semibold mb-4">学習タイマー</h2>
